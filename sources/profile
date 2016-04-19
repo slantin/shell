@@ -1,3 +1,7 @@
+# editor
+export EDITOR=micro
+alias "m=micro"
+
 # general
 alias "c=clear"
 alias "cls=clear;ls"

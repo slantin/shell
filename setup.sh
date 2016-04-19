@@ -26,10 +26,12 @@ install_honukai_zsh_theme() {
 
 backup_or_remove() {
 	if [ -e $1 ]; then
-		pc $BLUE "$1 already exsits... create backup?\n"
+		pc $BLUE "Create a backup of $1?\n"
 		select yn in "Yes" "No"; do
 			case $yn in
-				Yes ) mv -r $1 $1.backup; break ;;
+				Yes ) mv $1 $1.backup;
+					  pc $GREEN "Created backup as $1.backup\n";
+					  break ;;
 				No )  rm $1; break ;;
 			esac
 		done
@@ -47,12 +49,10 @@ install_custom_tmuxconf() {
 	ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
 }
 
-pc $BLUE "Checking for zsh installation... "
-if [ ! -e /bin/zsh ]; then
-	pc $RED "not found. Please install zsh and try again."
-	exit 1
-fi
-ok
+install_custom_profile() {
+	backup_or_remove ~/.profile
+	ln -s $(pwd)/sources/profile ~/.profile
+}
 
 pc $BLUE "Checking for oh-my-zsh installation... "
 if [ ! -e ~/.oh-my-zsh ]; then
@@ -93,7 +93,15 @@ else
 	ok
 fi
 
-pc $BLUE "Install custom .zshrc file?\n"
+pc $BLUE "Install custom .profile?\n"
+select yn in "Yes" "No"; do
+	case $yn in
+		Yes ) install_custom_profile; ok; break ;;
+		No )  break ;;
+	esac
+done
+
+pc $BLUE "Install custom .zshrc?\n"
 select yn in "Yes" "No"; do
 	case $yn in
 		Yes ) install_custom_zshrc; ok; break ;;
@@ -101,7 +109,7 @@ select yn in "Yes" "No"; do
 	esac
 done
 
-pc $BLUE "Install custom .tmux.conf file?\n"
+pc $BLUE "Install custom .tmux.conf?\n"
 select yn in "Yes" "No"; do
 	case $yn in
 		Yes ) install_custom_tmuxconf; ok; break ;;
