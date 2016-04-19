@@ -1,6 +1,6 @@
 [submodule "plugins/zsh-syntax-highlighting"]
-	path = plugins/zsh-syntax-highlighting
+	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "themes/honukai-iterm-zsh"]
-	path = themes/honukai-iterm-zsh
+	path = zsh/themes/honukai-iterm-zsh
 	url = https://github.com/oskarkrawczyk/honukai-iterm-zsh
