@@ -3,13 +3,17 @@ export EDITOR=micro
 alias "m=micro"
 
 # general
+alias "srcall=source ~/.zshrc"
 alias "c=clear"
 alias "cls=clear;ls"
+alias "l=tree -CL 1 --dirsfirst"
+alias "prof=~/.profile"
+
+# tmux
+DISABLE_AUTO_TITLE=true
 
 # git
 alias "gdnc=git diff --name-only | cat"
-
-# go stuff
 
 # all things related to work or to a specific machine should go into this file
 source ~/.profile.secret
