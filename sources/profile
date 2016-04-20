@@ -3,11 +3,12 @@ export EDITOR=micro
 alias "m=micro"
 
 # general
+alias "home=cd ~"
 alias "srcall=source ~/.zshrc"
 alias "c=clear"
 alias "cls=clear;ls"
 alias "l=tree -CL 1 --dirsfirst"
-alias "prof=~/.profile"
+alias -g "prof=~/.profile"
 
 # tmux
 DISABLE_AUTO_TITLE=true
