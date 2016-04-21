@@ -10,6 +10,9 @@ alias "cls=clear;ls"
 alias "l=tree -CL 1 --dirsfirst"
 alias -g "prof=~/.profile"
 
+# macros
+mcd() { md $1; cd $1; }
+
 # tmux
 DISABLE_AUTO_TITLE=true
 
