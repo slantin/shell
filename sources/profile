@@ -9,8 +9,8 @@ alias "c=clear"
 alias "cls=clear;ls"
 alias "l=tree -CL 1 --dirsfirst"
 alias -g "prof=~/.profile"
-alias -g "clp=tr -d '\n' | pbcopy"
-alias -g "clpp=tee >(copy)"
+alias -g "copy=tr -d '\n' | pbcopy"
+alias -g "pcopy=tee >(copy)"
 
 # macros
 mcd() { md $1; cd $1; }
