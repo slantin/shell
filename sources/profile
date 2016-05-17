@@ -1,6 +1,7 @@
 # editor
 export EDITOR=micro
 alias "m=micro"
+update_editor () { go get -u github.com/zyedidia/micro/cmd/micro; }
 
 # general
 alias "home=cd ~"
@@ -11,6 +12,12 @@ alias "l=tree -CL 1 --dirsfirst"
 alias -g "prof=~/.profile"
 alias -g "copy=tr -d '\n' | pbcopy"
 alias -g "pcopy=tee >(copy)"
+
+# makefile
+alias "mk=make"
+alias "mkb=make build"
+alias "mkr=make run"
+alias "mkc=make clean"
 
 # macros
 mcd() { md $1; cd $1; }
