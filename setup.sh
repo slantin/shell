@@ -11,7 +11,7 @@ pc() {
 }
 
 install_oh_my_zsh() {
-	# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
 install_zsh_syntax_highlighting() {
