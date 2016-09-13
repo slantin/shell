@@ -29,5 +29,8 @@ DISABLE_AUTO_TITLE=true
 alias "gs=git status"
 alias "gdnc=git diff --name-only | cat"
 
+# docker
+alias "dk=docker"
+
 # all things related to work or to a specific machine should go into this file
 source ~/.profile.secret
