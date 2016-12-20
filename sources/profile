@@ -28,6 +28,7 @@ DISABLE_AUTO_TITLE=true
 # git
 alias "gs=git status"
 alias "gdnc=git diff --name-only | cat"
+glc() { git log | head -n 1 | cut -f 2 -d ' ' }
 
 # docker
 alias "dk=docker"
