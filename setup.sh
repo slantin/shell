@@ -2,6 +2,8 @@
 
 source ./sources/colors
 
+git submodule init && git submodule update
+
 ok() {
 	printf "${GREEN}OK\n${NC}"
 }
@@ -12,6 +14,11 @@ pc() {
 
 install_oh_my_zsh() {
 	# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+}
+
+install_zsh_autosuggestions() {
+	ln -s $(pwd)/zsh/plugins/zsh-autosuggestions \
+		~/.oh-my-zsh/plugins/zsh-autosuggestions
 }
 
 install_zsh_syntax_highlighting() {
@@ -73,6 +80,19 @@ if [ ! -L ~/.oh-my-zsh/plugins/zsh-syntax-highlighting ]; then
 	select yn in "Yes" "No"; do
 		case $yn in
 			Yes ) install_zsh_syntax_highlighting; break ;;
+			No )  break ;;
+		esac
+	done
+else
+	ok
+fi
+
+pc $BLUE "Checking for zsh-autosuggestions plugin... "
+if [ ! -L ~/.oh-my-zsh/plugins/zsh-autosuggestions ]; then
+	pc $ORANGE "not found. Install?\n"
+	select yn in "Yes" "No"; do
+		case $yn in
+			Yes ) install_zsh_autosuggestions; break ;;
 			No )  break ;;
 		esac
 	done

@@ -15,12 +15,14 @@ alias -g "pcopy=tee >(copy)"
 
 # makefile
 alias "mk=make"
+alias "mka=make all"
 alias "mkb=make build"
 alias "mkr=make run"
 alias "mkc=make clean"
 
 # macros
 mcd() { md $1; cd $1; }
+dif() { diff -u $1 $2 | colordiff | less }
 
 # tmux
 DISABLE_AUTO_TITLE=true

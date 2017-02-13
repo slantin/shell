@@ -4,3 +4,6 @@
 [submodule "themes/honukai-iterm-zsh"]
 	path = zsh/themes/honukai-iterm-zsh
 	url = https://github.com/oskarkrawczyk/honukai-iterm-zsh
+[submodule "zsh/plugins/zsh-autosuggestions"]
+	path = zsh/plugins/zsh-autosuggestions
+	url = git://github.com/zsh-users/zsh-autosuggestions
