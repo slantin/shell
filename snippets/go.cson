@@ -1,0 +1,13 @@
+'.source.go':
+	'if err is not nil':
+		'prefix': 'ern'
+		'body': 'if err != nil'
+	'json encode and write':
+		'prefix': 'jenc'
+		'body': 'json.NewEncoder(${1:"w io.Writer"}).Encode(${2:"v interface{}"})'
+	'json decode into struct':
+		'prefix': 'jdec'
+		'body': 'json.NewDecoder(${1:"r io.Reader"}).Decode(${2:"v interface{}"})'
+	'if err in struct':
+		'prefix': 'iferreq'
+		'body': 'if err := $1; err != nil {\n\t${2:"return"}\n}'
