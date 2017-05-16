@@ -34,6 +34,7 @@ glc() { git log | head -n 1 | cut -f 2 -d ' ' }
 
 # docker
 alias "dk=docker"
+alias "dkc=docker-compose"
 
 # all things related to work or to a specific machine should go into this file
 source ~/.profile.secret
