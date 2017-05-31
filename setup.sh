@@ -27,7 +27,7 @@ install_zsh_syntax_highlighting() {
 }
 
 install_honukai_zsh_theme() {
-	ln -s $(pwd)/zsh/themes/honukai-iterm-zsh/honukai.zsh-theme \
+	ln -s $(pwd)/zsh/themes/honukai.zsh-theme \
 	      ~/.oh-my-zsh/themes/honukai.zsh-theme
 }
 

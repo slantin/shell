@@ -1,12 +1,9 @@
 [submodule "plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "themes/honukai-iterm-zsh"]
-	path = zsh/themes/honukai-iterm-zsh
-	url = https://github.com/oskarkrawczyk/honukai-iterm-zsh
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = git://github.com/zsh-users/zsh-autosuggestions
-[submodule "nord-terminal-app"]
-	path = nord-terminal-app
-	url = https://github.com/arcticicestudio/nord-terminal-app
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
