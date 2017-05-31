@@ -7,3 +7,6 @@
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = git://github.com/zsh-users/zsh-autosuggestions
+[submodule "nord-terminal-app"]
+	path = nord-terminal-app
+	url = https://github.com/arcticicestudio/nord-terminal-app
