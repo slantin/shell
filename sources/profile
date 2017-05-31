@@ -20,6 +20,13 @@ alias "mkb=make build"
 alias "mkr=make run"
 alias "mkc=make clean"
 
+# virtual box
+alias "vb=vboxmanage"
+alias "vbl=vb list vms"
+vbs() { vb startvm $1 }
+vbsh() { vb startvm $1 --type=headless }
+vbo() { vb controlvm $1 poweroff }
+
 # macros
 mcd() { md $1; cd $1; }
 dif() { diff -u $1 $2 | colordiff | less }
