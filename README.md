@@ -2,9 +2,6 @@
 
 This repo defines my personal shell configurations.
 
-It is (will be) set up so that when I get a new computer, or EC2, or whatever, I can run `./setup.sh` and quickly:
-* link in my `.profile`, `.zshrc`, etc
-* add plugins and themes not included by default in `oh-my-zsh`
-* and some other stuff...?
+Running `setup.sh` will install oh-my-zsh, link in my dotfiles, install zsh plugins and the zsh honukai theme, link my tmux configuration, and install atom packages if desired.
 
-Everything assumes that the repo has been cloned into the home directory, `~/shell`.
+To install `git clone https://github.com/slantin/shell.git ~/.shell; cd ~/.shell'; ./setup.sh`.
