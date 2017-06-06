@@ -61,6 +61,14 @@ install_custom_profile() {
 	ln -s $(pwd)/sources/profile ~/.profile
 }
 
+pc $BLUE "Creating ~/.localenv... "
+if [ -e ~/.localenv ]; then
+	pc $RED "already exists. Please remove and try again."
+	exit 1
+fi
+echo "# SHELLHOME: do not delete this, needed when sourcing profile\nexport SHELLHOME=$(pwd)"
+	> ~/.localenv
+
 pc $BLUE "Checking for oh-my-zsh installation... "
 if [ ! -e ~/.oh-my-zsh ]; then
 	pc $ORANGE "not found. Install oh-my-zsh?\n"
