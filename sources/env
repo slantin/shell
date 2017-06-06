@@ -1,0 +1,5 @@
+# editor
+export EDITOR=micro
+
+# tmux; stop windows from auto-renaming themselves
+DISABLE_AUTO_TITLE=true

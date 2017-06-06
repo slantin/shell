@@ -1,0 +1,27 @@
+# general
+alias "m=micro"
+alias "h=cd ~"
+alias "srcall=source ~/.zshrc"
+alias "c=clear"
+alias "cls=clear; ls"
+alias "l=tree -CL 1 --dirsfirst"
+alias "copy=tr -d '\n' | pbcopy"	# macOS only
+alias "pcopy=tee >(copy)"			# pipe-able version of copy
+
+# git
+alias "gmd=gc --amend -C HEAD"
+alias "gmdc= gc --amend -c HEAD"
+alias "gs=git status"
+alias "glc=git log | head -n 1 | cut -f 2 -d ' '"
+alias "gbd=gd $(git merge-base HEAD master) HEAD"
+
+# makefile
+alias "mk=make"
+alias "mka=make all"
+alias "mkb=make build"
+alias "mkr=make run"
+alias "mkc=make clean"
+
+# virtualbox
+alias "vb=vboxmanage"
+alias "vlb=vb list vms"
