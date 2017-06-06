@@ -1,6 +1,6 @@
 export SHELLHOME=/Users/slantin/.shell # TODO can have user configure this during setup perhaps?
 
-source $SHELLHOME/env
-source $SHELLHOME/aliases
-source $SHELLHOME/macros
+source $SHELLHOME/sources/env
+source $SHELLHOME/sources/aliases
+source $SHELLHOME/sources/macros
 source ~/.localenv # should contain local machine only configurations

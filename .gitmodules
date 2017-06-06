@@ -1,9 +1,9 @@
 [submodule "plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	url = https://github.com/slantin/zsh-syntax-highlighting
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions
+	url = git://github.com/slantin/zsh-autosuggestions
 [submodule "fonts"]
 	path = fonts
-	url = https://github.com/powerline/fonts.git
+	url = https://github.com/slantin/fonts.git
