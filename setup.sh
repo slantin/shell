@@ -63,12 +63,12 @@ install_custom_profile() {
 
 pc $BLUE "Creating ~/.localenv... "
 if [ -e ~/.localenv ]; then
-	pc $RED "already exists. Please remove and try again.\n"
-	exit 1
+	pc $ORANGE "already exists. Skipping.\n"
+else
+	echo "# SHELLHOME: do not delete this, needed when sourcing profile\nexport SHELLHOME=$(pwd)"
+		> ~/.localenv
+	ok
 fi
-echo "# SHELLHOME: do not delete this, needed when sourcing profile\nexport SHELLHOME=$(pwd)"
-	> ~/.localenv
-ok
 
 pc $BLUE "Checking for oh-my-zsh installation... "
 if [ ! -e ~/.oh-my-zsh ]; then
