@@ -25,3 +25,7 @@ alias 'mkc=make clean'
 # virtualbox
 alias 'vb=vboxmanage'
 alias 'vlb=vb list vms'
+
+# docker
+alias 'dk=docker'
+alias 'dkc=docker-compose'
