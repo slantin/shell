@@ -29,3 +29,8 @@ alias 'vlb=vb list vms'
 # docker
 alias 'dk=docker'
 alias 'dkc=docker-compose'
+
+# weather
+function weather() {
+	curl "http://wttr.in/$1"
+}

@@ -23,12 +23,12 @@
     "Alpha Component" : 1,
     "Green Component" : 0.7021664381027222
   },
-  "Ansi 0 Color" : {
-    "Red Component" : 0.1762142032384872,
+  "Ansi 1 Color" : {
+    "Red Component" : 0.688555896282196,
     "Color Space" : "Calibrated",
-    "Blue Component" : 0.2530012428760529,
+    "Blue Component" : 0.3416893780231476,
     "Alpha Component" : 1,
-    "Green Component" : 0.1969218552112579
+    "Green Component" : 0.2943579256534576
   },
   "Bold Color" : {
     "Red Component" : 0.9072774648666382,
@@ -38,23 +38,23 @@
     "Green Component" : 0.9209208488464355
   },
   "Normal Font" : "DejaVuSansMonoPowerline 14",
-  "Ansi 2 Color" : {
-    "Red Component" : 0.5760542154312134,
+  "Custom Directory" : "No",
+  "Ansi 3 Color" : {
+    "Red Component" : 0.8990201950073242,
     "Color Space" : "Calibrated",
-    "Blue Component" : 0.4759744107723236,
+    "Blue Component" : 0.4728026986122131,
     "Alpha Component" : 1,
-    "Green Component" : 0.7002110481262207
-  },
-  "Ansi 1 Color" : {
-    "Red Component" : 0.688555896282196,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.3416893780231476,
-    "Alpha Component" : 1,
-    "Green Component" : 0.2943579256534576
+    "Green Component" : 0.7557785511016846
   },
   "Rows" : 100,
   "Default Bookmark" : "No",
-  "Custom Directory" : "No",
+  "Ansi 4 Color" : {
+    "Red Component" : 0.4340144395828247,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.7045942544937134,
+    "Alpha Component" : 1,
+    "Green Component" : 0.5608044862747192
+  },
   "Blend" : 0.5,
   "Cursor Guide Color" : {
     "Red Component" : 0.1762142032384872,
@@ -316,7 +316,7 @@
     }
   },
   "Window Type" : 7,
-  "Blur Radius" : 12.08807091346154,
+  "Blur Radius" : 30,
   "Cursor Type" : 1,
   "Background Image Location" : "",
   "Blur" : true,
@@ -357,13 +357,6 @@
   },
   "Minimum Contrast" : 0.3229578718354431,
   "Shortcut" : "",
-  "Cursor Color" : {
-    "Red Component" : 0.8121471405029297,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.8922592401504517,
-    "Alpha Component" : 1,
-    "Green Component" : 0.8385788202285767
-  },
   "Tab Color" : {
     "Red Component" : 0.1762142032384872,
     "Color Space" : "Calibrated",
@@ -371,22 +364,29 @@
     "Alpha Component" : 1,
     "Green Component" : 0.1969218552112579
   },
+  "Ansi 0 Color" : {
+    "Red Component" : 0.1762142032384872,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.2530012428760529,
+    "Alpha Component" : 1,
+    "Green Component" : 0.1969218552112579
+  },
+  "Cursor Color" : {
+    "Red Component" : 0.8121471405029297,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.8922592401504517,
+    "Alpha Component" : 1,
+    "Green Component" : 0.8385788202285767
+  },
   "Guid" : "347B92AC-DB63-47C9-A370-CC10FFA26915",
+  "Link Color" : {
+    "Red Component" : 0.8736777901649475,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.9262098073959351,
+    "Alpha Component" : 1,
+    "Green Component" : 0.8916594386100769
+  },
   "Horizontal Spacing" : 1,
-  "Ansi 3 Color" : {
-    "Red Component" : 0.8990201950073242,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.4728026986122131,
-    "Alpha Component" : 1,
-    "Green Component" : 0.7557785511016846
-  },
-  "Ansi 4 Color" : {
-    "Red Component" : 0.4340144395828247,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.7045942544937134,
-    "Alpha Component" : 1,
-    "Green Component" : 0.5608044862747192
-  },
   "Right Option Key Sends" : 0,
   "Use Non-ASCII Font" : false,
   "Ansi 7 Color" : {
@@ -410,12 +410,12 @@
     "Alpha Component" : 1,
     "Green Component" : 0.2943579256534576
   },
-  "Link Color" : {
-    "Red Component" : 0.8736777901649475,
+  "Ansi 2 Color" : {
+    "Red Component" : 0.5760542154312134,
     "Color Space" : "Calibrated",
-    "Blue Component" : 0.9262098073959351,
+    "Blue Component" : 0.4759744107723236,
     "Alpha Component" : 1,
-    "Green Component" : 0.8916594386100769
+    "Green Component" : 0.7002110481262207
   },
   "Transparency" : 0.06471662352071006
 }
