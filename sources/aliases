@@ -14,6 +14,8 @@ alias 'gmdc= gc --amend -c HEAD'
 alias 'gs=git status'
 alias 'glc=git log | head -n 1 | cut -f 2 -d " "'
 alias 'gbd=gd $(git merge-base HEAD master) HEAD'
+alias 'wip=gc -m "wip"'
+alias 'unwip=git reset HEAD~1'
 
 # makefile
 alias 'mk=make'
