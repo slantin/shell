@@ -17,6 +17,9 @@ alias 'gbd=gd $(git merge-base HEAD master) HEAD'
 alias 'wip=gc -m "wip"'
 alias 'unwip=git reset HEAD~1'
 
+# kube
+alias "k=kubectl"
+
 # makefile
 alias 'mk=make'
 alias 'mka=make all'
