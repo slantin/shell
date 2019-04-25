@@ -16,7 +16,8 @@ alias 'glc=git log | head -n 1 | cut -f 2 -d " "'
 alias 'gbd=gd $(git merge-base HEAD master) HEAD'
 alias 'wip=gc -m "wip"'
 alias 'unwip=git reset HEAD~1'
-alias 'gls=git branch -vv'
+alias 'gls=git branch -vv | ccat'
+alias 'flow=git checkout -b'
 
 # kube
 alias "k=kubectl"
