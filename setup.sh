@@ -146,10 +146,3 @@ select yn in "Yes" "No"; do
 	esac
 done
 
-pc $BLUE "Install Atom packages?\n"
-select yn in "Yes" "No"; do
-	case $yn in
-		Yes ) ./atom/setup.sh; break ;;
-		No )  break ;;
-	esac
-done
