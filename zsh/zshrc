@@ -38,15 +38,15 @@ ZSH_THEME="honukai-minimal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ssh-agent git tmux brew brew-cask golang zsh-syntax-highlighting zsh-autosuggestions postgres)
+plugins=(ssh-agent git tmux golang zsh-syntax-highlighting zsh-autosuggestions postgres)
 
 # ssh-agent stuff
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities id_rsa sim_infra_test_rsa
+zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

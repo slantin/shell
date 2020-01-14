@@ -27,8 +27,8 @@ install_zsh_syntax_highlighting() {
 }
 
 install_honukai_zsh_theme() {
-	ln -s $(pwd)/zsh/themes/honukai.zsh-theme \
-	      ~/.oh-my-zsh/themes/honukai.zsh-theme
+	ln -s $(pwd)/zsh/themes/honukai-minimal.zsh-theme \
+	      ~/.oh-my-zsh/themes/honukai-minimal.zsh-theme
 }
 
 backup_or_remove() {
@@ -65,7 +65,7 @@ pc $BLUE "Creating ~/.localenv... "
 if [ -e ~/.localenv ]; then
 	pc $ORANGE "already exists. Skipping.\n"
 else
-	echo "# SHELLHOME: do not delete this, needed when sourcing profile\nexport SHELLHOME=$(pwd)"
+	echo "# SHELLHOME: do not delete this, needed when sourcing profile\nexport SHELLHOME=$(pwd)" \
 		> ~/.localenv
 	ok
 fi
@@ -110,7 +110,7 @@ else
 fi
 
 pc $BLUE "Checking for honukai.zsh-theme... "
-if [ ! -L ~/.oh-my-zsh/themes/honukai.zsh-theme ]; then
+if [ ! -L ~/.oh-my-zsh/themes/honukai-minimal.zsh-theme ]; then
 	pc $ORANGE "not found. Install?\n"
 	select yn in "Yes" "No"; do
 		case $yn in
