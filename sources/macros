@@ -1,9 +1,2 @@
-# general
-update_editor () { go get -u github.com/zyedidia/micro/cmd/micro; }
-mcd() { md $1; cd $1; }
-dif() { diff -u $1 $2 | colordiff | less }
-
-# virtualbox
-vbstart() { vb startvm $1 }
-vbstarth() { vb startvm $1 --type=headless }
-vboff() { vb controlvm $1 poweroff }
+function mcd { md $1; cd $1; }
+function dif { diff -u $1 $2 | colordiff | less }
