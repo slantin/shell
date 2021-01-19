@@ -1,2 +1,14 @@
-function mcd { md $1; cd $1; }
-function dif { diff -u $1 $2 | colordiff | less }
+# general
+function update_editor () { go get -u github.com/zyedidia/micro/cmd/micro; }
+function mcd() { md $1; cd $1; }
+function dif() { diff -u $1 $2 | colordiff | less }
+
+# Use `jq` with both JSON and non-JSON lines.
+function jjq {
+    jq -R -r "${1:-.} as \$line | try fromjson catch \$line"
+}
+
+function mktar {
+	DIR=$1
+	tar -zvcf "$DIR".tar.gz "$DIR"
+}

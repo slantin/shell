@@ -18,6 +18,7 @@ alias 'wip=gc -m "wip"'
 alias 'unwip=git reset HEAD~1'
 alias 'gls=git branch -vv | ccat'
 alias 'flow=git checkout -b'
+alias 'gu=git pull --ff-only --prune'
 
 # kube
 alias "k=kubectl"
